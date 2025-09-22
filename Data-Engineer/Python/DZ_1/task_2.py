@@ -1,9 +1,7 @@
-phrase_1 = input()
-phrase_2 = input()
+year = int(input())
 
-if phrase_1 > phrase_2:
-    print(f"{phrase_1} > {phrase_2}")
-elif phrase_1 < phrase_2:
-    print(f"{phrase_2} > {phrase_1}")
+print("Результат: ")
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print("Високосный год")
 else:
-    print(f"{phrase_1} == {phrase_2}")
+    print("Обычный год")
